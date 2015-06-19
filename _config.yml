@@ -1,14 +1,27 @@
-# Site settings
-title: Alan Jamieson's Page
-email: acjamieson@smcm.edu
-description: > # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
-baseurl: "" # the subpath of your site, e.g. /blog/
-url: "http://ripark.github.io" # the base hostname & protocol for your site
-twitter_username: drripark
-github_username:  ripark
+# Dependencies
+markdown:         redcarpet
+highlighter:      pygments
 
-# Build settings
-markdown: kramdown
+# Permalinks
+permalink:        pretty
+relative_permalinks: true
+
+# Setup
+title:            Kumquats
+tagline:          ''
+description:      'A home for all of my academic adventures'
+url:              http://ripark.github.io
+baseurl:          /
+
+author:
+  name:           'Alan Jamieson'
+  url:            https://twitter.com/drripark
+
+paginate:         5
+
+# Custom vars
+version:          0.0.0
+lastupdate:       'June 18, 2015'
+
+github:
+  repo:           https://github.com/ripark
