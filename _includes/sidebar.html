@@ -25,9 +25,18 @@
           {% endif %}
         {% endif %}
       {% endfor %}
-
       <hr>
-      <a class="sidebar-nav-item" href="{{ site.github.repo }}">GitHub project</a>
+      Current Courses:
+      {% assign pages_list = site.pages %}
+      {% for node in pages_list %}
+        {% if node.title != null %}
+          {% if node.layout == "course" %}
+            <a class="sidebar-nav-item{% if page.url == node.url %} active{% endif %}" href="{{ node.url }}">{{ node.shorttitle }}</a>
+          {% endif %}
+        {% endif %}
+      {% endfor %}
+      <hr>
+      <a class="sidebar-nav-item" href="{{ site.github.repo }}">GitHub profile</a>
       <span class="sidebar-nav-item">Last Update: {{ site.lastupdate }}</span>
     </nav>
 
