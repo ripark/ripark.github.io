@@ -8,8 +8,8 @@ relative_permalinks: true
 
 # Setup
 title:            Kumquats
-tagline:          ''
-description:      'A home for all of my academic adventures'
+tagline:          'A home for all of my academic adventures'
+description:      'The internet home of one Alan C. Jamieson.'
 url:              http://ripark.github.io
 baseurl:          /
 
@@ -22,6 +22,8 @@ paginate:         5
 # Custom vars
 version:          0.0.0
 lastupdate:       'June 18, 2015'
+github_username:  'ripark'
+twitter_username: 'drripark'
 
 github:
   repo:           https://github.com/ripark
