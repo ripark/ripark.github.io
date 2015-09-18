@@ -1,0 +1,8 @@
+Alan, Interest Checking, 4513.45, 3.5
+Lindsay, Platinum Checking, 2344.67, 3.0
+Simon, Interest Checking, 5584.32, 4.5
+Sandy, Checking, 1100.38
+Dave, Interest Checking, 345.21, 3.0
+Casey, Checking, 12.10
+Emek, Interest Checking, 2248.78, 3.0
+Ivan, Platinum Checking, 1.34, 4.4

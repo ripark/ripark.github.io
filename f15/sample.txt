@@ -1,0 +1,29 @@
+Total assets of the bank: 16150.25 
+*** Adding interest! ***
+Total assets of the bank: 16778.13
+*** Opening account ***
+Enter name: George
+Enter account type: Interest Checking
+Enter deposit: 1415.10
+*** Printing ***
+1 Alan Interest Checking 4671.42 3.5
+6 Casey Checking 12.10
+5 Dave Interest Checking 355.57 3.0
+7 Emek Interest Checking 2316.24 3.0
+9 George Interest Checking 1415.10 3.0
+8 Ivan Platinum Checking 1.46 4.4
+2 Lindsay Platinum Checking 2485.35 3.0
+4 Sandy Checking 1100.38
+3 Simon Interest Checking 5835.61 4.5
+*** Closing account ***
+Enter account number: 5
+Closing 5 Dave Interest Checking 3.0
+*** Printing ***
+1 Alan Interest Checking 4671.42 3.5
+6 Casey Checking 12.10
+7 Emek Interest Checking 2316.24 3.0
+9 George Interest Checking 1415.10 3.0
+8 Ivan Platinum Checking 1.46 4.4
+2 Lindsay Platinum Checking 2485.35 3.0
+4 Sandy Checking 1100.38
+3 Simon Interest Checking 5835.61 4.5
