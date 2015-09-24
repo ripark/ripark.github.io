@@ -6,68 +6,101 @@ title: AWS Guide for 480
 AWS Guide for GPU Setup<br>
 Updated: September 24th, 2015
 <br>
+<br>
 Step 0: The very first thing that you will need to do is to set up an AWS account. Go here and sign-in or create your account:
+<br>
 <br>
 <a href="https://aws.amazon.com/">https://aws.amazon.com/</a>
 <br>
+<br>
 Be sure to set this up using your SMCM email address.
+<br>
 <br>
 Step 1: Sign up for AWS Educate for Students:
 <br>
+<br>
 <a href="https://aws.amazon.com/education/awseducate/">https://aws.amazon.com/education/awseducate/</a>
+<br>
 <br>
 Step 2: Follow the instructions at
 <br>
+<br>
 <a href="http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/get-set-up-for-amazon-ec2.html">http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/get-set-up-for-amazon-ec2.htm</a>
+<br>
 <br>
 When you create a security group in step 5 from the above guide, you will want to set up the SSH inbound for the range of SMCM IP addresses, 139.78.0.0/32.
 <br>
+<br>
 Step 3: Next, you'll set up and launch your instance. If you are on Windows, we suggest PuTTY
+<br>
 <br>
 <a href="http://www.chiark.greenend.org.uk/~sgtatham/putty/">http://www.chiark.greenend.org.uk/~sgtatham/putty/</a>
 <br>
+<br>
 <a href="http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/putty.html">Connecting via PuTTY</a>
+<br>
 <br>
 and on Mac/Linux, you'll be using your terminal client.
 <br>
+<br>
 <a href="http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/AccessingInstancesLinux.html">Connecting via SSH</a>
+<br>
 <br>
 Step 4: Follow the instructions for steps 1, 2, and 4 here:
 <br>
+<br>
 <a href="http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/EC2_GetStarted.html">http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/EC2_GetStarted.html</a>
+<br>
 <br>
 You want to specify ami-2cbf3e44, on g2.2xlarge as your server in step 1 from the above guide.
 <br>
+<br>
 A couple of quick notes. Each time you get ready to start and log in to your instance, be sure to check your IP address if you are off campus. You will likely need to update your SSH inbound settings in the Security Groups console.
+<br>
 <br>
 Click here:
 <br>
-[Security Screenshot 1]({{ site.url }}/f15/AWSSec1.png
+<br>
+<img src="AWSSec1.png">
+<br>
 <br>
 Then click on the appropriate security group:
 <br>
-[Security Screenshot 2]({{ site.url }}/f15/AWSSec2.png
+<br>
+<img src="AWSSec2.png">
+<br>
 <br>
 Click on inbound:
 <br>
-[Security Screenshot 3]({{ site.url }}/f15/AWSSec3.png
+<br>
+<img src="AWSSec3.png">
+<br>
 <br>
 Click on edit:
 <br>
-[Security Screenshot 4]({{ site.url }}/f15/AWSSec4.png
+<br>
+<img src="AWSSec4.png">
+<br>
 <br>
 Then enter the new IP address, making sure to add /32 to the end:
 <br>
-[Are you really reading the rollovers?]({{ site.url }}/f15/AWSSec5.png
+<br>
+<img src="AWSSec5.png">
+<br>
 <br>
 You can also do this if you messed up the IP address during the initial setup.
 <br>
+<br>
 The next thing - BE SURE TO STOP YOUR INSTANCE. When you get done, you should absolutely be sure to stop your instance, or it will keep deducting from your credits. However, since AWS charges by the hour, you will always be charged for an hour even if you only run the server for 3 minutes. QQ
+<br>
 <br>
 My strong suggestion is to do your coding outside of the server instance and then "push" your code to the server. This is done through SCP, or secure copy. If you are on a linux/OSX machine instructions can be found here, about halfway down (Transferring Files to Linux Instances from Linux Using SCP):
 <br>
+<br>
 <a href="http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/AccessingInstancesLinux.html">http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/AccessingInstancesLinux.html</a>
 <br>
+<br>
 If you are on Windows, my suggestion is to use WinSCP. A guide for use is available here:
+<br>
 <br>
 <a href="http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/putty.html#Transfer_WinSCP">http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/putty.html#Transfer_WinSCP</a>
