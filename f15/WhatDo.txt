@@ -1,0 +1,23 @@
+1.) Go to the samples directory
+
+> cd /usr/local/cuda/samples/0_Simple/vectorAdd
+
+??.) You will need to copy the vectorAdd files to your home directory:
+
+> cp * ~
+
+??-part deux.) Go home, ET
+
+> cd ~
+
+2.) compile the solution
+
+> make
+
+2a.) you may need to chmod your vectorAdd
+
+> sudo chmod 777 ./vectorAdd
+
+3.) run the solution
+
+> ./vectorAdd

@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: null
 title: AWS Guide for 480
 ---
 
@@ -28,7 +28,7 @@ Step 2: Follow the instructions at
 <a href="http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/get-set-up-for-amazon-ec2.html">http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/get-set-up-for-amazon-ec2.htm</a>
 <br>
 <br>
-When you create a security group in step 5 from the above guide, you will want to set up the SSH inbound for the range of SMCM IP addresses, 139.78.0.0/32.
+Before you create a keypair in step 3, be sure to change the region to US-East (N. Virginia). Make sure that your keypair is for this region, or you will not be able to connect to the server. When you create a security group in step 5 from the above guide, you will want to set up the SSH inbound for the range of SMCM IP addresses, 139.0.0.0/32, and "Add Rule" for SSH inbound for 138.0.0.0/32.
 <br>
 <br>
 Step 3: Next, you'll set up and launch your instance. If you are on Windows, we suggest PuTTY
@@ -51,7 +51,7 @@ Step 4: Follow the instructions for steps 1, 2, and 4 here:
 <a href="http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/EC2_GetStarted.html">http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/EC2_GetStarted.html</a>
 <br>
 <br>
-You want to specify ami-2cbf3e44, on g2.2xlarge as your server in step 1 from the above guide.
+You want to specify ami-2cbf3e44 (search via Community AMI in the left nav bar), on g2.2xlarge as your server in step 1 from the above guide.
 <br>
 <br>
 A couple of quick notes. Each time you get ready to start and log in to your instance, be sure to check your IP address if you are off campus. You will likely need to update your SSH inbound settings in the Security Groups console.
@@ -85,7 +85,7 @@ Then enter the new IP address, making sure to add /32 to the end:
 You can also do this if you messed up the IP address during the initial setup.
 <br>
 <br>
-The next thing - BE SURE TO STOP YOUR INSTANCE. When you get done, you should absolutely be sure to stop your instance, or it will keep deducting from your credits. However, since AWS charges by the hour, you will always be charged for an hour even if you only run the server for 3 minutes. QQ
+The next thing - BE SURE TO STOP (NOT TERMINATE) YOUR INSTANCE. When you get done, you should absolutely be sure to stop your instance, or it will keep deducting from your credits. However, since AWS charges by the hour, you will always be charged for an hour even if you only run the server for 3 minutes. QQ
 <br>
 <br>
 My strong suggestion is to do your coding outside of the server instance and then "push" your code to the server. This is done through SCP, or secure copy. If you are on a linux/OSX machine instructions can be found here, about halfway down (Transferring Files to Linux Instances from Linux Using SCP):
