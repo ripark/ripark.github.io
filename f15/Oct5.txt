@@ -1,0 +1,61 @@
+  List - a collection where the elements have a position
+
+  Two major lists - ArrayList and LinkedList
+
+  List Interface (java.util)
+
+    * Part of the Collection API
+    get(index)
+    set(index, newvalue)
+    int indexOf(element) //returns -1 if element not found
+    listIterator(int pos)
+
+  List Iterator interface:
+
+    public interface ListIterator<T> extends Iterator<T>{
+      Boolean hasPrevious();
+      T previous();
+    } 
+
+  ArrayList vs LinkedList - ArrayList is great if you
+  consistently add to the end of the list. If not,
+  insertion takes linear (O(n)) time. LinkedList allows
+  for insertion in O(1) time.
+
+  Knock against LinkedList#1
+  10 element ArrayList - 320 bits + overhead
+  10 element LinkedList - 320 bits of data + 
+                          320 bits for prev +
+                          320 bits for next +
+                          overhead
+
+  Knock against LinkedList#1.5 - more complicated
+
+  adding an element:
+    void insert(LinkedListElement e, int i){
+
+      LinkedListElement temp;
+      temp = head; //head private to the LinkedList
+      
+      for (int j = 0; j<i-1; j++){
+        temp = temp.next;
+      }
+    
+      e.prev = temp;
+      e.next = temp.next;
+      temp.next = e;
+      temp.next.next.prev = e;
+
+  Things we have to worry about when programming a
+    LinkedList:
+
+	insert() - start, end, middle
+        remove() - start, end, middle
+	also - insertion, removal on empty
+             - removal of the final element
+
+  Java uses a doubly linked list
+
+  LinkedList knock#2 - O(n) indexed retrieval/get
+
+  Big big benefit - O(1) addition/removal
