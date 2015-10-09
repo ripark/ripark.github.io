@@ -1,0 +1,58 @@
+  remove from front:
+
+    //works if length of list > 1
+    head = head.next;
+    head.prev = null;
+
+  remove from back:
+
+    //works if length of list > 1
+    temp = head;
+    //iterate to the end
+    tail = temp.prev;
+    temp.prev.next = null;
+
+  remove from middle:
+
+   temp = head;
+   //iterate to index i
+   temp.prev.next = temp.next;
+   temp.next.prev = temp.prev;
+   temp = null;
+   
+  ----------------------------
+  Java API of LinkedList
+
+    void addLast(element)
+    void addFirst(element)
+    AnyType getFirst()
+    AnyType element() //does the same thing as getFirst()
+    AnyType getLast()
+    AnyType removeLast()
+    AnyType removeFirst()
+    AnyType remove() //does the same thing as removeFirst()
+
+  ----------------------------
+ 
+  Exercise: in a main method, create a LinkedList, fill it with
+            50000 random Integers, then use a ListIterator to print
+            them all out.	
+
+  Solution:
+
+  public static void main(String[] args){
+	Random r = new Random();
+		
+	LinkedList<Integer> l = new LinkedList<Integer>();
+	int i = 0;
+	while(i < 50000){
+		l.add(r.nextInt(50000));
+		i++;
+	}
+		
+	ListIterator<Integer> it = l.listIterator();
+	while(it.hasNext()){
+		System.out.println(it.next());
+	}
+		
+  }
