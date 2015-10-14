@@ -1,0 +1,60 @@
+  STACKS
+
+  Stacks are a restricted insert and remove data structure:
+
+  Specifically - LIFO
+
+  Stacks are really great for expression resolution
+
+  Classicaly stack has three functions:
+
+     void push (T element) //insert
+     T pop() //remove and return
+     T top() //look at the top element
+
+  For aiding poor programmers:
+
+     Boolean isEmpty()
+
+  Java Methods:
+
+     Everything Collection
+     Everything in List
+
+     boolean empty() //isEmpty method
+     T peek()        //top()
+     T pop()
+     T push(T item) 
+
+  What if I only have a LinkedList?
+     LinkedList j;
+     j.addLast(element) // push
+     j.removeLast() // pop
+     j.get(j.size-1) // top
+
+     - or -
+
+     j.addFirst(element)
+     j.removeFirst()
+     j.get(0)
+
+  public class genericPerson<AnyType extends Person>{
+   ...
+  }
+
+  public interface myinterface{
+   
+    public int add(int a, int b);
+
+  }
+ 
+  public class myclass implements myinterface{
+
+    public int add(int a, int b){
+     return a+b;
+    }
+
+    private int add(int a, int b, int c){
+     return a+b+c;
+    }
+  }
