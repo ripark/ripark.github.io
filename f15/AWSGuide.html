@@ -28,7 +28,7 @@ Step 2: Follow the instructions at
 <a href="http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/get-set-up-for-amazon-ec2.html">http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/get-set-up-for-amazon-ec2.htm</a>
 <br>
 <br>
-Before you create a keypair in step 3, be sure to change the region to US-East (N. Virginia). Make sure that your keypair is for this region, or you will not be able to connect to the server. When you create a security group in step 5 from the above guide, you will want to set up the SSH inbound for the range of SMCM IP addresses, 139.0.0.0/32, and "Add Rule" for SSH inbound for 138.0.0.0/32.
+Before you create a keypair in step 3, be sure to change the region to US-East (N. Virginia). Make sure that your keypair is for this region, or you will not be able to connect to the server. When you create a security group in step 5 from the above guide, you will want to set up the SSH inbound for the range of SMCM IP addresses, 139.0.0.0/8, and "Add Rule" for SSH inbound for 138.0.0.0/8.
 <br>
 <br>
 Step 3: Next, you'll set up and launch your instance. If you are on Windows, we suggest PuTTY
