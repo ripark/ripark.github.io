@@ -1,0 +1,72 @@
+Queues - these are not implemented in Java as lists
+
+FIFO structure
+
+Anytime that you need to order objects and restrict access
+based on "time"
+
+Typical methods:
+
+   void enqueue(T element)
+   T dequeue()
+   T getFront()
+
+With Java 5, Queue was added as an interface that extends Collection
+
+   T element() - getFront
+   T remove() - dequeue
+
+From the collection interface:
+
+   void add(T item) - enqueue
+
+How can we alter LinkedList to be a queue?
+   LinkedList l;
+   addFirst()           - enqueue
+   removeLast()         - dequeue
+   get(l.size-1) - getFront
+
+How would we implement balanced symbol checker - just parens
+
+Wrong Solution:
+   int i = 0;
+   Go through my string:
+     if character == "("
+       i++
+     else if character == ")"
+       i--
+
+   if i == 0
+     print success!
+   else
+     print failure!
+
+Possible Solution:
+   int i = 0;
+   Go through my string:
+     if character == "("
+       i++
+     if character == ")"
+       i--
+       if i < 0
+         break;
+   
+   if i == 0
+     print success!
+   else
+     print failure!
+
+Balanced Symbol checker - compiler styleeeeeee
+bad example: [ < ] >
+
+One stack
+
+if character = "(" || character = "[" ...
+  push character
+if character = ")" || character = "]" ..
+  if top is the appropriate paired symbol
+    pop
+  else
+    failure!
+
+if a stack is not empty: failure!
