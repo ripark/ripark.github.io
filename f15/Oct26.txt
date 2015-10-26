@@ -1,0 +1,75 @@
+
+More data structures in Collection
+
+Sets - a container with no duplicates.
+
+Three main implementations - SortedSet, HashSet, TreeSet
+
+SortedSet - elements must be comparable or a Comparator needs to be
+  defined for those elements
+
+   Two extra methods:
+
+     AnyType first() //smallest item
+     AnyType last()  //largest item
+
+TreeSet - an implementation of SortedSet - underlying implementation
+  is a balanced binary tree
+
+   TreeSet<Integer> t = new TreeSet<Integer>();
+   t.add(14);
+
+   TreeSet guarantees O(log n) contains, add, remove
+
+   Problem: may have to rebalance the tree upon add or remove
+
+HashSet - very fast set, that provides no way to go through items
+   in any sort of order
+
+Relies on a concept called hash code - an integer provided by a
+  hashing function, that integer dictates where my object is stored
+
+If I've set up my hashing function correctly, two identical
+  objects will hash to the same code
+
+Trouble: hashing functions are not always correct. Hashing functions
+  generally do not guarantee that no two distinct objects will
+  hash to the same code.
+
+What does a "correct" hash code function look like?
+
+  int hashCode(Integer i)
+    return i;
+
+  int hashCode(String s)
+    return concatenate the ascii values of all the characters in s
+
+  int hashCode(Float f)
+    return ???
+
+Two special considerations for an object that can be placed in a 
+  Java HashSet
+
+  Any object added to the hashSet must have a properly overriden
+    equals method
+
+  public boolean equals(Object rhs){}
+
+  Also - a properly overriden hashCode method - can guarantee no
+    duplicates, otherwise, who knows.
+
+  public int hashCode(){}
+
+  For example: Student class, name, gpa, etc, etc
+
+  public boolean equals(Object rhs){
+
+    if (rhs == null || getClass() != rhs.getClass())
+      return false;
+
+    return name.equals((Student) rhs.getName());
+  }
+
+  public int hashCode(){
+    return name.hashCode();
+  }
