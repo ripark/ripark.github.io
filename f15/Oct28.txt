@@ -1,0 +1,42 @@
+Section 11.2 - simple calculator, you should feel free to use this code in your
+  project
+
+Consider 10 - 4 - 3 (left to right) left associative 
+Consider 3 ^ 2 ^ 3 (right to left) right associative 
+Consider 1 - 2 - 4 ^ 5 * 3 * 6 / 7 ^ 2 ^ 2
+
+(1 - 2) - ((((4 ^ 5) * 3) * 6) / (7 ^ (2 ^2)))
+
+We need to allow for a lack of order of operations upon execution. Parens work, but
+they are complicated to insert. Is there a better way?
+
+Postfix/Reverse Hungarian Notation
+
+1 + 2 * 3 (infix)
+
+1 2 3 * + (postfix)
+
+Algorithm for postfix expression resolution:
+
+if I read an operand, push
+if I read an operator, pop appropriate amount of operands, evaluate, push result
+  (first pop goes on the right side of the operand, second goes on the left)
+
+Algorithm for infix to postfix conversion/Shunting Yard:
+
+Read a symbol:
+
+   if that symbol is an operand - output
+   if that symbol is a close paren - pop stack symbols until an appropriate 
+      open paren appears
+   if that symbol is an operator - pop all stack symbols until a symbol of lower 
+      precedence, or a right-associative symbol of equal precedence appears, then
+      push
+
+End of input: pop all remaining symbols
+
+Everytime I pop, output to the output string
+
+Example: 1 + 2 * 3 ^ 4 ^ 2
+
+1 - 2 ^ 3 ^ 3 - (4 + 5 * 6) * 7
