@@ -1,0 +1,60 @@
+Recursion - Chapter 7 section 1-3
+
+4 fundamental rules of recursion (according to Weiss):
+
+1.) Base cases - always have at least one base case
+2.) Always make progress - each recursive call must progress toward
+    the solution.
+3.) "You gotta believe" - always assume the recursive call works
+4.) Compound Interest Rule - don't duplicate work if you can avoid it
+
+Recursion Example #1: Fibonacci
+
+  public int fib (int n){
+    if (n == 0 || n == 1)
+      return n;
+    return fib(n-1) + fib(n-2);
+  }
+
+Problem: not efficient (due to #4)
+
+Potential Solution #1: populate an array such that any calculation that
+  has already been done is a simple lookup in the array
+
+   public int fib (int n){
+     if (n == 0 || n == 1)
+       return n;
+     if n exists in my array, return that value
+     temp = fib(n-1) + fib(n-2)
+     set temp value in array
+     return temp;
+   }
+
+Potential Solution #2: move forward-ish
+
+  //public entry method
+  public int fib(int n){
+    if (n == 0 || n == 1)
+      return n;
+    return fibHelper(n, 0, 1);
+  }
+
+  //private helper method
+  private int fibHelper (int n, int b, int a){
+    if (n == 0)
+      return a;
+
+    return fibHelper(n-1, a, a+b); 
+  } 
+
+Exercise #1 - recursively print an integer N in any base up to 16.
+
+   private static final String DIGIT_TABLE = "0123456789abcdef";
+
+   public void recursivePrint(int n, int base){
+
+     if (n>=base)
+       recursivePrint(n/base, base);
+     System.out.print(DIGIT_TABLE.charAt(n%base);
+
+   }
