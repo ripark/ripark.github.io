@@ -54,7 +54,7 @@ public class Proj2Driver {
 		//Valid Test 4, parentheses test, variable continuity test
 		System.out.println("Valid Test 4");
 		System.out.println("Expected output: 457");
-		test.processInput("((4 + 6) * x + 2 - (3 + 2))");
+		test.processInput("([4 + 6] * x + 2 - {3 + 2})");
 		System.out.println("");
 
 		//Valid Test 5, unary operators
@@ -73,6 +73,10 @@ public class Proj2Driver {
 		System.out.println("Error Test 1");
 		System.out.println("Expected output: Unbalanced Parentheses Error, Too Many Left Parentheses");
 		test.processInput("((())())(((()))");
+		System.out.println("Expected output: Unbalanced Parentheses Error, Mismatched Parentheses");
+		test.processInput(")(");
+		System.out.println("Expected output: Unbalanced Parentheses Error, Mismatched Parentheses");
+		test.processInput("([)]");
 		System.out.println("");
 
 		//Error Test 2 - undefined variable
