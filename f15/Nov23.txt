@@ -1,0 +1,53 @@
+Quiz (until 12:20):
+
+  You can place 8 Queens on an 8x8 chessboard such that no
+  Queen can capture any other Queen. Draw a configuration
+  of Queens on a chessboard where this is true.
+
+Graph representations:
+
+  Let G = (V, E) be a graph
+
+  V is a set of vertices
+  E is a set of edges
+
+Many classes of graphs:
+
+  Paths
+  Trees/Forest
+  Caterpillar
+  Cacti
+  Complete graph - n vertices where each vertex has degree n-1
+  
+Properties:
+
+  Directed vs undirected - directed edges with arrows indicating
+    allowed movement
+  Cyclic - does there exist a cycle from A back to A
+  Weighted - cost to go along an edge
+
+Representation:
+
+  1.) Adjacency Matrix - 2 dimensional array of integers, n x n
+      where n is the number vertices in my graph - |V|
+
+      Each entry in the matrix i,j gives the weight (if there is
+      one) between vertices i and j. For positively-weighted graphs
+      0 indicates that there is no edge between i and j.
+
+      [[0, 3, 0, 4, 0],
+       [0, 0, 1, 0, 4],
+       [0, 3, 2, 0, 2],
+       [0, 0, 0, 0, 0],
+       [0, 0, 0, 2, 0]]
+
+  2.) Adjacency List - a 2 dimensional list. List of lists. Each list
+      represents a source vertex, each element in that list represents
+      vertices that are adjacent to that source.
+
+      (vertex, weight)
+      List G = List 1 -> (2, 3), (4, 4)
+               List 2 -> (3, 1), (5, 4)
+               List 3 -> (2, 3), (3, 2), (5, 2)
+               List 4 -> null
+               List 5 -> (4, 2)
