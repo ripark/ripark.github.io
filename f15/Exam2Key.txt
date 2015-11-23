@@ -1,0 +1,63 @@
+#1: Points were deducted if you missed that TreeSet is sorted, if you missed
+    that no duplicates should be in the set, or if you did not give me the
+    actual print output.
+
+#2: This is in the slides, but the basic three things I wanted folks to address
+    were why the n/2 exists, what the if statement is for, and how % plays into
+    the solution.
+
+#3: See the slides.
+
+#4: this could be done by removing the leading and trailing whitespace via loop
+    but trim() works just fine here
+
+public static boolean isPalindrome(String s){
+  s = s.trim();
+  if (s.length() == 0 || s.length() == 1)
+    return true;
+  if (s.charAt(0) == s.charAt(s.length()-1))
+    return isPalindrome(s.substring(1, s.length()-1));
+  else
+    return false;
+}
+
+#5: Postfix: 1 2 3 * 5 3 2 ^ ^ / + 4 + 6 7 8 7 8 + ^ * 9 * + -
+    Eval: numerous, checked work here
+    If you were missing work for either part, you lost points.
+
+#6: 
+public class Student{
+  public int id; //I do this to save writing space...
+  private String name;
+  private double gpa;
+  
+  public Student(){
+    id = 0;
+    name = "John";
+    gpa = 4.0;
+  }    
+
+  public Student(int i, String n, double g){
+    id = i;
+    name = n;
+    gpa = g;
+  }
+
+  //two methods to ensure HashSet behavior
+  //Student ids are generally unique
+
+  public boolean equals(Object s){
+    if (s instanceof Student){
+      return id == ((Student) s).id;
+    }
+    return false;
+  }
+
+  public int hashCode(){
+    return id;
+  }
+}
+
+#7:
+to base 3: 20012
+to base 13: 11B
