@@ -101,13 +101,13 @@ public class Proj3Driver {
 
 		//Valid test 2 - regularly sized test
 		//Expected Output: [24, 23, 22, 21, 16, 11, 12] 6
-		//                            [24, 23, 22, 21, 16, 11, 12] 6
+		//                 [24, 23, 22, 21, 16, 11, 12] 6
 		System.out.println(g.processGraph(regValid, 1, 24, 12));
 		System.out.println(g.processGraph(regValid, 2, 24, 12));
 
 		//Valid test 3 - bigger sized test
-		//Expected Output: [0, 1, 2, 3, 4, 9, 14, 13, 18, 23, 28, 29, 30, 25] 13
-		//                            [0, 1, 2, 3, 4, 9, 14, 13, 18, 23, 28, 29, 30, 25] 13
+		//Expected Output: [0, 1, 2, 3, 8, 13, 12, 17, 22, 27, 28, 29, 24] 12
+		//                 [0, 1, 2, 3, 8, 13, 12, 17, 22, 27, 28, 29, 24] 12           [
 		System.out.println(g.processGraph(bigValid, 1, 0, 24));
 		System.out.println(g.processGraph(bigValid, 2, 0, 24));
 
