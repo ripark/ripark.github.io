@@ -91,21 +91,23 @@ public class Proj3Driver {
 										  {0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0},
 										  {0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 1, 0},
 									    {0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 1},
-								      {0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0}}
+								      {0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0}};
 
 		//Valid test 1 - source and destination one hop away (2 vertex graph)
 		//Also checking for directed graph handling
-		//Expected Output: 3 and 2
+		//Expected Output: [0, 1] 3 and [1, 0] 2
 		System.out.println(g.processGraph(smallValid, 1, 0, 1));
 		System.out.println(g.processGraph(smallValid, 2, 1, 0));
 
 		//Valid test 2 - regularly sized test
-		//Expected Output: 6 and 6
+		//Expected Output: [24, 23, 22, 21, 16, 11, 12] 6
+		//                            [24, 23, 22, 21, 16, 11, 12] 6
 		System.out.println(g.processGraph(regValid, 1, 24, 12));
 		System.out.println(g.processGraph(regValid, 2, 24, 12));
 
 		//Valid test 3 - bigger sized test
-		//Expected Output: 12 and 12
+		//Expected Output: [0, 1, 2, 3, 4, 9, 14, 13, 18, 23, 28, 29, 30, 25] 12
+		//                            [0, 1, 2, 3, 4, 9, 14, 13, 18, 23, 28, 29, 30, 25] 12
 		System.out.println(g.processGraph(bigValid, 1, 0, 24));
 		System.out.println(g.processGraph(bigValid, 2, 0, 24));
 
