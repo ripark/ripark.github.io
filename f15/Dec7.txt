@@ -1,0 +1,70 @@
+Wednesday - 8pm in 106, Extra Credit for attending/evaluating the Game Design Gala
+Final - attendance is mandatory, even if you are not taking the final
+        final exam itself is optional and will not hurt your grade
+        final review sheet posted
+
+Sorts - Chapter 8
+
+First efficient sort - insertion sort
+
+   Our simplest "efficient" sorting algorithm, suitable to small inputs. Algorithm takes 
+   elements from the input, and inserts them into the sorted output array.
+ 
+   a[] = {2, 4, 7, 2, -1, 9, 12, -3, 6};
+
+   //in-place insertion sort
+   public void insertionSort(int [] a){
+
+     for(int p = 1; p<a.length; p++{
+       int tmp = a[p];
+       int j = p;
+    
+       for( ; j > 0 && tmp < a[j-1]; j--)
+         a[j] = a[j-1];
+      
+       a[j] = tmp;
+   }
+
+   O(n^2) time
+
+   Worst case - array is sorted in reverse order, lots of data movement
+   Best case - array is already sorted, no data movement, O(n)
+
+   For 50 years insertion sort was considered the best sort.
+
+   Second sort: Shell sort - invented by Donald Shell in 1959 to improve insertion sort.
+     Attempt to reduce the amount of data movement within the average case.
+
+     Basic idea: Shell sort uses a sequence of integers called the increment sequence. Using
+       this increment sequence, the first of which is 1 and the others are increasing from there,
+       we proceed to do an insertion sort in phases. After each phase with some increment h
+   
+       a[i] <= a[i+h]
+
+       At increment 1, we have general insertion sort.
+
+       Shell sort (also known as gap sort) continuously reduces the "gap" we span to do our
+       comparisons within insertion sort. 
+
+    Good choice for even moderately large input - general case O(n^(3/2)), can get all the
+      way to O(n^(7/6)) depending on the input. We don't know why 2.2 is the best (thus far).
+
+
+   Third sort: mergesort. Leverage recursion to get our bounds even lower. 3 step process:
+
+     1.) If the number of items to sort is 0 or 1, return
+     2.) Recursively sort the first half and second half of the array.
+     3.) Merge the two sorted halves into a sorted group.
+
+   This is a O(n log n) sort, one of the fastest sorts we have. However, we know that the
+     recursion is the log n portion, we need the merge to be linear time.
+
+   Merge:
+     Two arrays, A, B, and a destination array C. A and B are sorted.
+     Three counters to represent indicies in A, B, and C.
+    
+     Look at the elements A[Actr] and B[Bctr]. Move the smaller of the two to C[Cctr] and
+       increment the appropriate counters. Continue until Actr and Bctr are beyond the length
+       of their arrays.
+
+Code for all three sorts is in chapter 8.
