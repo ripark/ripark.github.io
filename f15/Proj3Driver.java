@@ -100,8 +100,8 @@ public class Proj3Driver {
 		System.out.println(g.processGraph(smallValid, 2, 1, 0));
 
 		//Valid test 2 - regularly sized test
-		//Expected Output: [24, 23, 22, 21, 16, 11, 12] 6
-		//                 [24, 23, 22, 21, 16, 11, 12] 6
+		//Expected Output: [24, 19, 14, 9, 8, 7, 12] 6
+		//                 [24, 19, 14, 9, 8, 7, 12] 6
 		System.out.println(g.processGraph(regValid, 1, 24, 12));
 		System.out.println(g.processGraph(regValid, 2, 24, 12));
 
