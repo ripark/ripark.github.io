@@ -1,0 +1,54 @@
+QuickSort - fastest sort that we have access to
+          - O(n log n) sort, just like mergesort
+
+          - divide and conquer, recursive approach to sort, but with
+            multiple moving parts
+
+Basic algorithm - S is our array
+
+  1.) if the number of elements is 0 or 1, then return
+  2.) Pick any element v in S, this is called the pivot
+  3.) Partition S - {v} into two disjoint sets. L = all elements <= v
+      R = all elements >= v
+  4.) Return the result of Quicksort(L) followed by v, followed by
+      Quicksort(R)
+
+What are the things we need to worry about?
+
+  1.) How do we pick the pivot?
+        Realllly bad - pick the minimum/maximum - will not divide evenly
+        Bad - pick the median - array has to be sorted
+            - pick the first/last - fine if data is random, natural data
+                is typically semi-ordered, and this could result with a
+                non-trivial chance, of choosing the minimum or maximum element
+        Reasonable - choose the element at length/2 - more likely to be a 
+                      good pivot
+                   - random element from 0 to length-1 - introduction of
+                      randomness makes the chances better
+        Standard "good" way - median-of-three - take the first element, the
+          last element, and the element at length/2, choose the median
+
+  2.) How do we do the partitioning?
+        Step 1: swap the pivot with the last element
+        Step 2: Going from left to right, find an element that is larger
+                than the pivot (index i). Going from the right to left,
+                find an element that is smaller than the pivot (index j).
+                Swap the elements at index i and index j.
+        Step 3: Repeat step 2 until i > j.
+        Step 4: Swap the element at the end with the element at index i.
+
+  3.) What happens to elements that are equal to the pivot?
+        Option 1: do nothing
+        Option 2: put them in the left or right partition
+
+        Option better: always swap them
+
+Is this really efficient for all sized arrays? For very short arrays
+  the recursion really affects the overall performance.
+
+For quicksort, we typically establish a constant called CUTOFF. This
+  represents the size of the array where we switch from quicksort to insertion
+  sort.
+
+Exercise:
+S = {7, 12, 8, 9, 4, 2, 1, 3, 3, 10}
