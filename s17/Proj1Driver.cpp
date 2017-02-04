@@ -42,7 +42,7 @@ int main(){
   //        3, Simon, 3.3
   //        2, Alan, 4.5
   //        1, Lindsay, 3.4
-  //        5
+  //        4
   cout<<s.top().getName()<<endl;
   s.pop();
   cout<<s.topandpop().getName()<<endl;
