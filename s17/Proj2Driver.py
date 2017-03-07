@@ -14,7 +14,7 @@ import Proj2
 #Expected output
 #16
 #42
-#11
+#11 or 5917393
 #539054
 Proj2.Problem1("32 20")
 Proj2.Problem1("2016 100")
