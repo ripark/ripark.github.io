@@ -26,3 +26,5 @@ twitter_username: 'drripark'
 
 github:
   repo:           https://github.com/ripark
+
+theme: jekyll-theme-slate
