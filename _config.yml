@@ -14,7 +14,7 @@ baseurl:          /
 
 author:
   name:           'Alan Jamieson'
-  url:            https://twitter.com/drripark
+  #url:            https://twitter.com/drripark
 
 paginate:         5
 
