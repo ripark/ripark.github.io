@@ -10,7 +10,7 @@ title:            Kumquats
 tagline:          'A home for all of my academic adventures'
 description:      'The internet home of one Alan C. Jamieson.'
 url:              http://ripark.github.io
-baseurl:          /
+baseurl:          http://ripark.github.io
 
 author:
   name:           'Alan Jamieson'
