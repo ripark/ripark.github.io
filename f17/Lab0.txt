@@ -1,0 +1,32 @@
+COSC 201 - Lab 0
+
+In JAVA, create a single class called Lab0. In that class, create the following methods.
+
+1.) Add3Ints (3 ints should be taken in as parameters) - calculate and return the sum of the three
+integers passed in as parameters.
+
+2.) Iterative Fibonacci (n should be taken in as a parameter) - calculate the nth value in the Fibonacci
+sequence and return that value. For instance, if 6 was passed in as n, this method should return 8. You
+may not use recursion to create this method.
+
+3.) Recursive Fibonacci (n should be taken in as a parameter) - as before, calculate the nth value in the
+Fibonacci sequence and return that value. You must use recursion to create this method.
+
+4.) PrintSomeInts - bring in a file of integers named ints.txt that has an int value, one per line.  Print 
+each int in binary, octal, and hexadecimal. (hint: printf)
+
+5.) ArrayProcessing - given an array of integers passed in as a parameter, calculate the high, low, median, 
+and mean of that array of ints and print those values.
+
+In addition, create a main method (driver) that has a menu and allow the user to select one of the five 
+methods above to execute. You should give an option to quit (option 0) and the program should continue to 
+execute until the user enters the option to quit. 
+
+For methods 1-3, printing of the result should be done only in the main method. For methods 4 and 5, the 
+printing should occur in the methods. 
+
+For method 5, ask the user for the size of the array and generate random ints to fill the array. For example, 
+if the user enters 1000, you'll create an int array of 1000 random elements and then pass to the method.
+
+Turn in via Blackboard by 11:59pm 9/5. Submit only Lab0.java. Do not submit any other files.
+
