@@ -1,7 +1,7 @@
 // Proj3Driver.java
 // Alan C. Jamieson
-// COSC 201 - Fall 2016
-// Last Revision: November 29, 2016
+// COSC 201 - Fall 2017
+// Last Revision: November 13, 2017
 
 // Testing driver for Assignment 3 - Shortest Path Algorithms
 // Name of target class: GraphAlgorithms
