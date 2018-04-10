@@ -11,8 +11,8 @@ Steps:
 0.) Test for optimality - is there a negative coefficient in eq0? If so, continue.	
 
 1.) Determine direction of movement: Looking at equation 0, the coefficients 
-indicate the rate of change for variables in eq 0. Choose the largest. This is
-our chosen variable to increase.
+indicate the rate of change for variables in eq 0. Choose the value of the
+most negative coefficient. This is our chosen variable to increase.
 
 2.) Determine where to stop: Figure out how the basic variables change by 
 looking at every constraint equation. If the equation has the variable, then
