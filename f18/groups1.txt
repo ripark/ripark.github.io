@@ -1,7 +1,8 @@
 Group Number  Names
-1
-2
-3
-4
-5
-6
+1             Kaufman, Manoly, Walsh
+2             Fletcher, Hamilton, Proctor
+3             Djeuhon, Taylor, Windahl
+4             Cortes, Goyco, Lambert
+5             Kostopulos, Mohammed
+6             Gorel, Valois
+7             Mince, Ratcliffe, Schoch
