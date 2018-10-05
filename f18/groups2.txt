@@ -1,7 +1,7 @@
 Group Number  Names
-1
-2
-3
-4
-5             
-6
+1             Fletcher, Lambert, Taylor (Team Emily Dickinson)
+2             Cortes, Djeuhon, Mohamed (Team Shakespeare)
+3             Gorel, Manoly, Ratcliffe (Team Billy Mays)
+4             Goyco, Mince, Schoch (Team Dr. Seuss)
+5             Kaufman, Kostopulos, Proctor (Team Game Theory)
+6             Hamilton, Valois, Walsh, Windahl (Team E.V.I.L.)

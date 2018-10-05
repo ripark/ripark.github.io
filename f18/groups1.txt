@@ -3,6 +3,6 @@ Group Number  Names
 2             Fletcher, Hamilton, Proctor
 3             Djeuhon, Taylor, Windahl
 4             Cortes, Goyco, Lambert
-5             Kostopulos, Mohammed
+5             Kostopulos, Mohamed
 6             Gorel, Valois
 7             Mince, Ratcliffe, Schoch
