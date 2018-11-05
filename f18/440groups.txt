@@ -1,0 +1,7 @@
+Names                         Topic
+Diaz, Schoch, Smith           Ada Lovelace and the Analytical Engine
+Cooper, Kaufman, Kostopulos   Life of von Neumann
+Djeuhon, Valois, van Stone    The Turing Test
+Cortes, Cruz                  Alan Turing and the Enigma Code
+Baird, King-Leatham, March    DFA
+Good, Windahl

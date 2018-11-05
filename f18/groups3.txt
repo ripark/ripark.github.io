@@ -1,0 +1,6 @@
+Names                                           Topic
+Djeuhon, Hamilton, Valois, Walsh*, Windahl      Image Manipulation
+Goyco, Lambert, Mince*, Schoch                  Image Recognition
+Cortes, Gorel*, Kaufman, Kostopulos, Mohamed    Speech/Sound Recognition
+Fletcher, Manoly, Proctor*, Ratcliffe, Taylor   Forecasting
+* Group coordinator
