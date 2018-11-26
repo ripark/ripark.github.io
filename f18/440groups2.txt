@@ -1,0 +1,8 @@
+Names                         Topic                       Date
+Cortes, King-Leatham          P vs NP                     11/27
+Cooper, Djeuhon, van Stone    Lambda Calculus             11/27
+Baird, Valois, Windahl        Approximation Algorithms    11/29
+Kaufman, Schoch               Quantum                     11/29
+Good, Smith                   Dynamic Programming         12/4
+Diaz, Kostopulos              Randomized                  12/4
+Cruz, March                   Strange TM                  12/6
