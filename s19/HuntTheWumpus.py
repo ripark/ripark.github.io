@@ -250,7 +250,7 @@ for game in range(numgames):
                 percept = percept + 'U'
                 playery = playery - 1
         elif move == 'W':
-            playery = playerx - 1
+            playery = playery - 1
             if bumpCheck(playerx, playery, board):
                 percept = percept + 'U'
                 playery = playery + 1
