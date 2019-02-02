@@ -2,7 +2,7 @@
 #Wumpus World driver
 #COSC370, Project 1
 #Alan C. Jamieson
-#Latest Revision: January 27, 2019
+#Latest Revision: February 1, 2019
 
 #This driver will ask the user for some information in regards to the format of the Hunt the Wumpus game (credit: Gregory Yob).
 #This information will then be passed to the WumpusAgent module (user provided), then randomly assign wumpi, pits, and gold.
