@@ -173,13 +173,21 @@ def moveWumpi(w, l):
     for wumpus in w:
         direction = randint(1,4)
         if direction == 1 and wumpus[0] != 0 and l[wumpus[0]-1][wumpus[1]] != 'g' and l[wumpus[0]-1][wumpus[1]] != 'p':
+            l[wumpus[0]][wumpus[1]] = 0
             wumpus[0] = wumpus[0] - 1
+            l[wumpus[0]][wumpus[1]] = 'w'
         if direction == 2 and wumpus[0] != len(l)-1 and l[wumpus[0]+1][wumpus[1]] != 'g' and l[wumpus[0]+1][wumpus[1]] != 'p':
+            l[wumpus[0]][wumpus[1]] = 0
             wumpus[0] = wumpus[0] + 1
+            l[wumpus[0]][wumpus[1]] = 'w'
         if direction == 3 and wumpus[1] != 0 and l[wumpus[0]][wumpus[1]-1] != 'g' and l[wumpus[0]][wumpus[1]-1] != 'p':
+            l[wumpus[0]][wumpus[1]] = 0
             wumpus[1] = wumpus[1] - 1
+            l[wumpus[0]][wumpus[1]] = 'w'
         if direction == 4 and wumpus[1] !=len(l)-1 and l[wumpus[0]][wumpus[1]+1] != 'g' and l[wumpus[0]][wumpus[1]+1] != 'p':
+            l[wumpus[0]][wumpus[1]] = 0
             wumpus[1] = wumpus[1] + 1
+            l[wumpus[0]][wumpus[1]] = 'w'
 
 #winCheck - check to see if player is back on entrance tile, with the gold
 def winCheck(x, y, l):
