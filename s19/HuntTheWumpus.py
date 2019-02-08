@@ -169,22 +169,22 @@ def deathCheck(x, y, l):
 
 #moveWumpi - moves the wumpi, stored as a list of lists
 def moveWumpi(w, l):
-    #Wumpus will not move onto the gold or onto a pit, but could be multiple wumpi in a space
+    #Wumpus will not move onto the gold, entrance, or onto a pit, but could be multiple wumpi in a space
     for wumpus in w:
         direction = randint(1,4)
-        if direction == 1 and wumpus[0] != 0 and l[wumpus[0]-1][wumpus[1]] != 'g' and l[wumpus[0]-1][wumpus[1]] != 'p':
+        if direction == 1 and wumpus[0] != 0 and l[wumpus[0]-1][wumpus[1]] != 'g' and l[wumpus[0]-1][wumpus[1]] != 'p' and l[wumpus[0]-1][wumpus[1]] != 'e':
             l[wumpus[0]][wumpus[1]] = 0
             wumpus[0] = wumpus[0] - 1
             l[wumpus[0]][wumpus[1]] = 'w'
-        if direction == 2 and wumpus[0] != len(l)-1 and l[wumpus[0]+1][wumpus[1]] != 'g' and l[wumpus[0]+1][wumpus[1]] != 'p':
+        if direction == 2 and wumpus[0] != len(l)-1 and l[wumpus[0]+1][wumpus[1]] != 'g' and l[wumpus[0]+1][wumpus[1]] != 'p' and l[wumpus[0]+1][wumpus[1]] != 'e':
             l[wumpus[0]][wumpus[1]] = 0
             wumpus[0] = wumpus[0] + 1
             l[wumpus[0]][wumpus[1]] = 'w'
-        if direction == 3 and wumpus[1] != 0 and l[wumpus[0]][wumpus[1]-1] != 'g' and l[wumpus[0]][wumpus[1]-1] != 'p':
+        if direction == 3 and wumpus[1] != 0 and l[wumpus[0]][wumpus[1]-1] != 'g' and l[wumpus[0]][wumpus[1]-1] != 'p' and l[wumpus[0]][wumpus[1]-1] != 'e':
             l[wumpus[0]][wumpus[1]] = 0
             wumpus[1] = wumpus[1] - 1
             l[wumpus[0]][wumpus[1]] = 'w'
-        if direction == 4 and wumpus[1] !=len(l)-1 and l[wumpus[0]][wumpus[1]+1] != 'g' and l[wumpus[0]][wumpus[1]+1] != 'p':
+        if direction == 4 and wumpus[1] !=len(l)-1 and l[wumpus[0]][wumpus[1]+1] != 'g' and l[wumpus[0]][wumpus[1]+1] != 'p' and l[wumpus[0]][wumpus[1]+1] != 'e':
             l[wumpus[0]][wumpus[1]] = 0
             wumpus[1] = wumpus[1] + 1
             l[wumpus[0]][wumpus[1]] = 'w'
