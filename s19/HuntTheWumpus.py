@@ -234,7 +234,7 @@ for game in range(numgames):
     if breezeCheck(playerx, playery, board):
         percept = percept + 'B'
     #while the player is not dead, and hasn't won yet, get the next move
-    while deathCheck != True and winCheck != True and nummoves != 20000:
+    while deathCheck != True and winCheck != True and nummoves != 400000:
         nummoves = nummoves + 1
         #get move from agent
         move = WumpusAgent.getMove(percept)
