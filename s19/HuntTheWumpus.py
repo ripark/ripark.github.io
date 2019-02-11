@@ -2,7 +2,7 @@
 #Wumpus World driver
 #COSC370, Project 1
 #Alan C. Jamieson
-#Latest Revision: February 8, 2019
+#Latest Revision: February 11, 2019
 
 #This driver will ask the user for some information in regards to the format of the Hunt the Wumpus game (credit: Gregory Yob).
 #This information will then be passed to the WumpusAgent module (user provided), then randomly assign wumpi, pits, and gold.
@@ -234,7 +234,7 @@ for game in range(numgames):
     if breezeCheck(playerx, playery, board):
         percept = percept + 'B'
     #while the player is not dead, and hasn't won yet, get the next move
-    while deathCheck != True and winCheck != True and nummoves != 400000:
+    while deathCheck != True and winCheck != True and nummoves != 4000000:
         nummoves = nummoves + 1
         #get move from agent
         move = WumpusAgent.getMove(percept)
@@ -313,7 +313,7 @@ for game in range(numgames):
             moveWumpi(wumpilist, board)
 
         #check if we timed out
-        if nummoves == 400000:
+        if nummoves == 4000000:
             numtimeouts = numtimeouts + 1
     #quick status print
     print("Game number " + str(game) + " complete in " + str(nummoves) + " moves.")
