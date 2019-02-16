@@ -1,0 +1,11 @@
+Team  Names
+1     Cruz, Manoly
+2     Khan, Walsh
+3     Brown, Comstock, Goyco
+4     Baird, Kline, Valois
+5     Cortes, Schoch, Trovinger
+6     Freshour, Proctor, Windahl
+7     Dickerson, Good, Lambert
+8     Good, Lyons, Mince
+9     Kostopulous, La Placa, March
+10    Cooper, Fuh, Taylor
