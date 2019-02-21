@@ -6,6 +6,10 @@
 #Quick test driver for the two methods in lab 4. Read the comments
 #to see what your code should print out!
 
+#command to run on prometheus
+#(make sure this source and your lab4.py source are in the same directory!):
+# python3 lab4driver.py
+
 import lab4
 
 #retest tests
@@ -27,7 +31,7 @@ lab4.retest("")
 #Output:
 #[0, 6, 12, 18, 24, 30, 36, 42, 48, 54, 60, 66, 72, 78, 84, 90, 96, 102]
 #[0, 1, 4, 9, 16, 25, 36, 49, 64, 81, 100]
-#["Alan", "Almost", "A"]
+#["Alan", "Almost", "A", "A."]
 #[]
 #[]
 ml = range(0,103)
