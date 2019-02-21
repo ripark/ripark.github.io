@@ -1,0 +1,9 @@
+Team  Names
+1     Clara, Byron, Olivia
+2     Renae, Julia, Hannah
+3     Mark, Harrison, Ben
+4     Destiny, Sharon
+5     Mason, Matt
+6     Sinclair, Rick
+7     Mikael, Weston
+8     Sebastian, Youssef
