@@ -1,0 +1,10 @@
+Team  Team Name   Names
+1
+2
+3
+4
+5
+6
+7
+
+Team coordinators are noted with a * after their names.
