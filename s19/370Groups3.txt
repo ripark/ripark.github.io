@@ -1,10 +1,10 @@
-Team  Team Name   Names
-1
-2
-3
-4
-5
-6
-7
+Team  Team Name         Names
+1                       Comstock, Dickerson, Kline, Lyons
+2                       Cooper, Cruz, March, Walsh
+3                       Baird, Goyco, LaPlaca, Schoch
+4                       Gorel, Khan, Lambert, Trovinger
+5     Alan <3 GOTO:     Brown*, Cortes, Kostopulous, Valois
+6                       Freshour, Fuh, Proctor, Windahl
+7     Code of War       Good, Manoly, Mince*, Taylor
 
 Team coordinators are noted with a * after their names.
