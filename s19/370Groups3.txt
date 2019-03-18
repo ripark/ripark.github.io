@@ -1,7 +1,7 @@
 Team  Team Name         Names
 1     Pink Pandas       Comstock, Dickerson*, Kline, Lyons
 2     Ben ShapiRobots   Cooper, Cruz, March, Walsh*
-3                       Baird, Goyco, LaPlaca, Schoch
+3     Battle-Bots       Baird, Goyco, LaPlaca, Schoch*
 4     Group 4           Gorel, Khan, Lambert*, Trovinger
 5     Alan <3 GOTO:     Brown*, Cortes, Kostopulous, Valois
 6                       Freshour, Fuh, Proctor, Windahl
