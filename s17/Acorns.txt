@@ -6,7 +6,7 @@ Quercus prinoides Willd.	Atlantic	17042	1.6	3
 Quercus Prinus L.	Atlantic	7646	10.5	24
 Quercus stellata Wang.	Atlantic	19938	2.5	17
 Quercus virginiana Mill	Atlantic	7985	0.9	15
-Quercus Michauxii Nutt.	Atlantic	8897	6.8	.30
+Quercus Michauxii Nutt.	Atlantic	8897	6.8	3
 Quercus lyrata Walt.	Atlantic	8982	1.8	24
 Quercus Laceyi Small.	Atlantic	233	0.3	11
 Quercus Chapmanii Sarg.	Atlantic	1598	0.9	15
