@@ -1,6 +1,6 @@
 Team  Names
-1     Mason, Matt, Mikael, Sinclair, Weston
-2     Destiny, Hannah, Harrison, Olivia, Sebastian
+1     Mason, Matt*, Mikael, Sinclair, Weston
+2     Destiny*, Hannah, Harrison, Olivia, Sebastian
 3     Ben*, Mark, Renae, Sharon
 4     Byron, Clara, Julia, Rick, Youssef*
 Group coordinator indicated with a * after their name.
