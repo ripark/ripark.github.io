@@ -1,0 +1,117 @@
+Below are the prompts and example execution for project 4. As a note,
+it is resonable to run forever, unless you detect a state that has
+stablized (like all dead tiles). You can depend on Lindsay and I to
+cut off the execution when we've seen enough.
+
+********************************************************************
+
+Enter the size of the board:
+10
+Enter the number of live neighbors for a live cell to stay alive:
+1 2 4
+Enter the number of live neighbors for a dead cell to become alive:
+4 6
+Distance for the neighbor rule:
+12
+Error: greater than the dimensions of the board, re-enter:
+2
+Number of live tiles to begin with:
+200
+Error: too many live tiles, re-enter:
+20
+Step 0:
+d A d d d d A d d d
+d d d d d d d d A d
+d d A A d d d d d d
+d d A A d d d d d d
+d d d d d d A d A A
+d A d d d d A A d d
+d d d d d d d d A A
+d d d A d d d d d d
+d A d d d d A A d d
+d d A d d d d d d d
+Press enter to continue:
+Step 1:
+d d d d d d d d d d
+d d d d d d d d d d
+d d A A d d d d d d
+d d A A d d d d d d
+d d d d d d A A d A
+d d d d d d A A d A
+d d d d d d A A A A
+d d d d d d d d d d
+d d d d d d A A d d
+d d d d d d d d d d
+Press enter to continue:
+Step 2:
+d d d d d d d d d d
+d d d d d d d d d d
+d d A A d d d d d d
+d d A A d d d d d d
+d d d d d d d A A d
+d d d d d d d A d d
+d d d d d A A A d A
+d d d d d d A A d d
+d d d d d d A A d d
+d d d d d d d d d d
+Press enter to continue:
+Step 3:
+d d d d d d d d d d
+d d d d d d d d d d
+d d A A d d d d d d
+d d A A d d d d d d
+d d d d d d d d A d
+d d d d d d d d d d
+d d d d d A A d d A
+d d d d d d d A d d
+d d d d d d d A d d
+d d d d d d d A d d
+Press enter to continue:
+Step 4:
+d d d d d d d d d d
+d d d d d d d d d d
+d d A A d d d d d d
+d d A A d d d d d d
+d d d d d d d d d d
+d d d d d d d d d d
+d d d d d A A A d d
+d d d d d d d A d d
+d d d d d d d A d d
+d d d d d d d A d d
+Press enter to continue:
+Step 5:
+d d d d d d d d d d
+d d d d d d d d d d
+d d A A d d d d d d
+d d A A d d d d d d
+d d d d d d d d d d
+d d d d d d d d d d
+d d d d d A A A d d
+d d d d d d d d d d
+d d d d d d d A d d
+d d d d d d d A d d
+Press enter to continue:
+Step 6:
+d d d d d d d d d d
+d d d d d d d d d d
+d d A A d d d d d d
+d d A A d d d d d d
+d d d d d d d d d d
+d d d d d d d d d d
+d d d d d A A A d d
+d d d d d d d d d d
+d d d d d d d A d d
+d d d d d d d A d d
+Press enter to continue:
+Board has stabilized, final state:
+d d d d d d d d d d
+d d d d d d d d d d
+d d A A d d d d d d
+d d A A d d d d d d
+d d d d d d d d d d
+d d d d d d d d d d
+d d d d d A A A d d
+d d d d d d d d d d
+d d d d d d d A d d
+d d d d d d d A d d
+
