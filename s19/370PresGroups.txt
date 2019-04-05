@@ -1,6 +1,6 @@
-Date  Topic         Names
-                    Baird, Lyons, Mince, Taylor, Trovinger
-                    Comstock, Lambert, LaPlaca, Schoch, Valois
-                    Cortes, Freshour, Khan, Manoly, March, Walsh
-                    Brown, Cooper, Cruz, Dickerson, Kline, Windahl
-                    Fuh, Good, Gorel, Goyco, Kostopulos, Proctor
+Date      Topic                         Names
+4/15      Evolutionary Robotics         Brown, Cooper, Cruz, Dickerson, Kline, Windahl
+4/17      Automated Pattern Recognition Baird, Lyons, Mince, Taylor, Trovinger
+4/19      Blockchain and AI             Cortes, Freshour, Khan, Manoly, March, Walsh
+4/22      Computational Creativity      Comstock, Lambert, LaPlaca, Schoch, Valois
+4/24      Solving Go                    Fuh, Good, Gorel, Goyco, Kostopulos, Proctor
