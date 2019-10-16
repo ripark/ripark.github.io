@@ -1,0 +1,10 @@
+Today's Exercise (worth a HW grade, due 10/21 by start of class):
+
+1.) Have one person in your team create the repository for your project.
+2.) Add everyone in the team as collaborators, add Alan as a collaborator. 
+3.) Each person should:
+	a.) Clone the repository.
+	b.) Create a branch.
+	c.) Edit README.md with your name.
+	d.) Commit, do a pull request, then merge the pull request.
+4.) Once everyone in the team has completed this task, email Alan.
