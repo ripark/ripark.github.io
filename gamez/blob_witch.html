@@ -403,7 +403,7 @@
 
 		}
 		e.type = "application/javascript";
-		e.src = "the_next_experiment.js";
+		e.src = "blob_witch.js";
 		e.id = "e_script";
 		
 		document.body.appendChild(e); // load and run
@@ -541,7 +541,7 @@ canvas{
 
 .p8_start_button{
 	cursor:pointer;
-	background:url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAIAAAACACAIAAABMXPacAAAEh0lEQVR4Ae2dv44cRRCH26t7ASxLSA7IjAMCXoXIee+9gZEsIq+WyEICIkKmQyRCJF4AngJOInCAZAnhnAAR9F5R1/+mpmdmZ+37Sj/t9fRVVVfX1z2TOuceoE1FCwAAAAQAACAAAAABAADorDpBOJsd3JNk5uhu4uTR3YiDTCaeoznFZ42F1rCrc3Y/37zRvzuzfQl7Se82gEmXY35fijy26vWlA9DdWeptkIQXX0EAsF6LjmbNDD+PbfP1R7eiBQAAAALAfdUJwnp2cE+SmaO7iZNHdyMOMln0PPNkLKxW/LL9uVq1+x11ayrt8MQzwdlXUpJkas7LBZDsobGx/NC1Pe29TjKv2tZLvwHFV9DowWyf1vUu5fsAoPiGXTZc+1iozCxpQdvm649uRQsAAAAEAAAgAAAAAQAACAAAQAAAAALAPQLg/bX8xoGekXlR8t+iv55PYrV/Y5yX2/Cv1WPMk2y8o+bcP38s9bPU0OJvA4Axqhar54sHIg83rjunfru/ZY+1qJ27Ne/3MraY9q/FNuZDGOx5jDUUc1pi116rYScAIQyS0WjaX491QbWcIQziVsvTUUMxpyV27bUa4E8AvN8XCeuV7FXq01EMT9aSx5r/VJuTp+NmjIboG5PbVl9/pD7CCAAAQAAAwP/y/jpqkbElf/Kvho+er+XM50f3Jb+18CR/I0+7HusN0Ct1/Oax9vyTfEbX6qs8KWBSnfm4pp2zmff7EAYZ6/nR8VTzfj8aXnOwrJvUqfclY2Nsd51iVgAhDJJLVxnCII/JuK/7OknbbdJ8zSfZ12i/ipvtqHMygDmnuLirOJn/KwbGuhOfqadv6s1onLx2ne29jy691dcfjX2EEQAAgAAAgDvy/joqGctjHOjfmn+ethGbOMtvLbZWs/Y3+hTrN+5rFQDFRz1fbGWxNW3/Wkg7fyOkDck4tu/Lop2bbt7vp/qHMPTFLlXD1Jze74tLJD7z6+kBIN009iWEQeYbsYvUMAeM5AxhqOXX89qte189AJLdyp51l2uNaJysuIdGrOWGzfGX2uJA1zNaksWnZlt9/VHXRxgBAAAIAABAAAAAAgAAEAAAgAAAAAQAACAAAAABAAAIAABAAAAAAgAAEAAAgAAAAAQAACAAAAAB4KJ0grCeeb+PgxCG2ljc8nExlQ6srVXLY6kh98nXWtDWJez9deNX++TjJE8SXvSUyXyVWj3FdUfzLKXdqsc/P7ne7+U0JfPyqMd5Kn1Cu+sp1rCVneMGtE+f5R6c5wYk4e/JDWicxHgA40BexPqEJm988be8l4t52jdPD852Obb5+qNb0QIAAAABAAAIAABAAAAAAgAAEAAAgAAAALS6ThAOX3zunHPOHV99nT/GGRknj6POOir3vOfr7vKwZS0uKQu/fvP29Zu3ay/6Dq17Ff98+/3Pd6Zf/aSfHj17+d0f7tGzl3/9+KVz7vDiofs3HF48PH71t3Pul19/vxP7/PHxnx/c88fumz/z9T768AP9yLqr3wCsbQ8+/eQpXdjQrj77+De6sKHxCtrY/gOqiRIqWs5NygAAABB0RVh0TG9kZVBORwAyMDExMDIyMeNZtsEAAAAASUVORK5CYII=");
+	background:url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAIAAAACACAIAAABMXPacAAAEbElEQVR4Ae2dsW7bMBCGKcHwUsObgwCeuiiWC/QBWnQwOmbJEqMdi4yd0hfJ1LHI2MJTls6Z+gAp0CD10E5eMnvKIHSgcWEoiiZFUrTL/4cgUCfqJP3fkbdmw1HJoHjKYQEAAAAEAADQRucf7vnBx+KZ4vr50i39s8r80nzl92i+oelZqznRAFxcHtC5fqsprgQpxpVzmt4rnnkew8elsfgN0n9RTjG/5t+jbUFiOTSVhuR16zm236P5TpPv2Y8eYFLFF5cHW/+naY6tEZpvEKvb5Hv2rwk37Y9S9Yl7q7gbmJRkfRp3s3XB0jc09SfH/Eplw1EZqf9DIVcABAAAAAEAAEAAAAAQAAAABAAAAAEAAEAAAADQngLoz+b6AwAgAAAACAAAwEbnZ8d06FuubZcGACP3NZdYAd1ZnyyGOAC4xUqjNbf+S/Val+3Fl+/eax9NOPh+DffbAPC4X2vWzec/z8TD/d/6s7l07CUA7/t1670rxR5gaO752bGVrcrJu1mhMVeAVWljc/cPwL2ooa3KhqPSvbRbuL91w/m4+Cp36fl7q0e2zn+4Xux6D0Bpx9yCIAAAACh6DzCR2KjRM6yUDUelR/fNGfRn8+g//3C92O8tqG69yS3IDwBusdJozS3IDwBDc8EgCAArW8EgSBM2t9WkIXfWlneh6/rZggxtNXc/WfVaP2llrrhiQMXDCnDZr9AVugOg8RoYggPgFiuN1txKTdlwVHZc+4a9pD+bO37Dw/Ui0RVgVdqJr4MgAJqK2n0yAHi2NXH3wzZhaL+bMFYAmjBWAACEZoAmHBAAFK0HQAAAABAAGOr5QUVH93lSB8DNujnMbg4zuuwyT9IAyDV+2ZqBS550AUiutWbgmCdRAErXWjBwz5MiAI1rVt55yZMNR2WC7pvr7726Rn3lSQ4A2VdUa8bYMh/wgaRlPmiyzG+eXrJNmLuzevGO/fqm9K6bPIk24d1R0iugqNbu5e+YJ/UVQK5N37ziR8d5sAVFFgBsdPXjZ5Q8ALDRyeuXUfIAQHR9GrO3k83xafx4iXg38cdraQbi3cTlSRIrxEPHFaAw7nIsLwppvSAeOv6kLSg3KcSDxmUsymWCeLi4Yo2IA8RDx5805foziIeOK24r+wbigeLyDJy7PWen5ZhB8dRjjC3zQVGtl/mAh4pqzQeO8ZPiNx9cLY+axkW1nk5WyrGY5/ZuPJ2s6vGmPPQ9Ju+tz7laHnn0QR/PaVRUa5oqznCJ396NKc7HFL+9G3MX+JgxRmPD/PwpMY9UXIbvFfPwASHx5YMmnhMccSpdOsZ5ldGYvJDidEljMQ8vf/6slL9J4rSm91rlCeTPMh/0pGVClLzEpeqbTlZMKDoaTCerolrTWMrDHeTn+ouUVS/eVb73kUdt3YTwQRPfrICORZXOB2S9cicxz6l8VrPaxIHt4vCl7LRs+cOQF8VZARAAAAAEAAAAAQAAAAAEAAAAAQAAQAAAABAAAAAEAAAAAQAAQAAAAFBo/QPaVONs4WrdQgAAABB0RVh0TG9kZVBORwAyMDExMDIyMeNZtsEAAAAASUVORK5CYII=");
 	-repeat center;
 	-webkit-background-size:cover; -moz-background-size:cover; -o-background-size:cover; background-size:cover;
 }
@@ -631,6 +631,10 @@ canvas{
 	</div> <!-- p8_container -->
 
 </div> <!-- p8_frame -->
+<h1> Use the arrow keys to move and jump. Hold/tap jump to go higher/shorter </h1>
+<h1>Press x to sprint</h1>
+<h1>You can jump off most walls</h1>
+<h1>If you get stuck on a level, you can reload the game and go to level select to skip it </h1>
 </div> <!-- size limit -->
 
 <script type="text/javascript">
