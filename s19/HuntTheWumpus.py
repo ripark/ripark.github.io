@@ -2,7 +2,7 @@
 #Wumpus World driver
 #COSC370, Project 1
 #Alan C. Jamieson
-#Latest Revision: February 4, 2021
+#Latest Revision: February 9, 2021
 
 #This driver will ask the user for some information in regards to the format of the Hunt the Wumpus game (credit: Gregory Yob).
 #This information will then be passed to the WumpusAgent module (user provided), then randomly assign wumpi, pits, and gold.
@@ -300,6 +300,10 @@ for game in range(numgames):
                 numwumpusdeaths = numwumpusdeaths + 1
             break
 
+        #move the wumpi if that game mode selected
+        if gametype == 2:
+            moveWumpi(wumpilist, board)
+
         #other percepts
         if stenchCheck(playerx, playery, board):
             percept = percept + 'S'
@@ -307,10 +311,6 @@ for game in range(numgames):
             percept = percept + 'G'
         if breezeCheck(playerx, playery, board):
             percept = percept + 'B'
-
-        #move the wumpi if that game mode selected
-        if gametype == 2:
-            moveWumpi(wumpilist, board)
 
         #check if we timed out
         if nummoves == 4000000:
